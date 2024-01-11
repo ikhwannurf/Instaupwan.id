@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" class="html">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Insta Up Followers Wan.id</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>Insta Up Followers Wan.id</h1>
+  </header>
+  <p class="p1">Selamat Datang Di Insta Up Wan.id</p>
+  <p class="p2">Selamat Belanja🛒</p>
+  <p class="p3">cara pesan:</p>
+  <p class="p3">pilih Tambahkan Keranjang Untuk produk yang ingin Anda Pesan,</p>
+  <p class="p3">Langkah salanjutnya bisa dilihat dikeranjang belanja anda</p>
+  <main class="main">
+
+
+
+    <div id="cart" class="divfoot">
+      <h2 class="keranjang">Keranjang Belanja🛒</h2>
+      <ul id="cart-list" class="foll">
+        <!-- Daftar item di keranjang akan ditampilkan di sini -->
+      </ul>
+
+
+      <p class="keranjang">Jika Sudah Memasukkan Pesanan</p>
+      <p class="keranjang">Pilih metode pembayaran dan klik tombol "Pilih Metode pembayaran" lalu checkout</p>
+      <!-- Dropdown untuk pilihan pembayaran -->
+      <label for="paymentMethod" class="keranjang">Pilih Metode Pembayaran:</label>
+      <select id="paymentMethod">
+        <option value="mandiri">Mandiri</option>
+        <option value="dana">Dana</option>
+        <option value="shopeepay">ShopeePay</option>
+        <option value="gopay">GoPay</option>
+        <option value="ovo">OVO</option>
+      </select>
+
+      <!-- Tombol "Pilih Metode Pembayaran" -->
+
+      <button onclick="selectPaymentMethod()">Pilih Metode Pembayaran</button>
+
+      <!-- Tombol "Checkout" -->
+      <button onclick="checkout()">Checkout</button>
+    </div>
+
+    <section class="product">
+      <img src="img/100 F.jpg" alt="Game 1" class="pict11">
+      <h2 class="foll">100 Followers</h2>
+      <p class="foll">Proses 10-30 menit, Garansi Refil 1x24 Jam, Harga Rp 4500</p>
+      <button onclick="addToCart('100 Followers', 4500)">Tambah ke Keranjang</button>
+    </section>
+    <section class="product">
+      <img src="img/200 F.jpg" alt="Game 1" class="pict11">
+      <h2 class="foll">200 Followers</h2>
+      <p class="foll">Proses 10-30 menit, Garansi Refil 1x24 Jam, Harga Rp 7000</p>
+      <button onclick="addToCart('200 Followers', 7000)">Tambah ke Keranjang</button>
+    </section>
+    <section class="product">
+      <img src="img/500 F.jpg" alt="Game 1" class="pict11">
+      <h2 class="foll">500 Followers</h2>
+      <p class="foll">Proses 10-30 menit, Garansi Refil 1x24 Jam, Harga Rp 15000</p>
+      <button onclick="addToCart('500 Followers', 15000)">Tambah ke Keranjang</button>
+    </section>
+    <section class="product">
+      <img src="img/1000 F.jpg" alt="Game 1" class="pict11">
+      <h2 class="foll">1000 Followers</h2>
+      <p class="foll">Proses 10-30 menit, Garansi Refil 1x24 Jam, Harga Rp 25000</p>
+      <button onclick="addToCart('1000 Followers', 25000)">Tambah ke Keranjang</button>
+    </section>
+    <section class="product">
+      <img src="img/2000 F.jpg" alt="Game 1" class="pict11">
+      <h2 class="foll">2000 Followers</h2>
+      <p class="foll">Proses 10-30 menit, Garansi Refil 1x24 Jam, Harga Rp 45000</p>
+      <button onclick="addToCart('2000 Followers', 45000)">Tambah ke Keranjang</button>
+    </section>
+    <section class="product">
+      <img src="img/5000 F.jpg" alt="Game 1" class="pict11">
+      <h2 class="foll">5000 Followers</h2>
+      <p class="foll">Proses 10-30 menit, Garansi Refil 1x24 Jam, Harga Rp 95000</p>
+      <button onclick="addToCart('5000 Followers', 95000)">Tambah ke Keranjang</button>
+    </section>
+    <section class="product">
+      <img src="img/10000 F.jpg" alt="Game 1" class="pict11">
+      <h2 class="foll">10000 Followers</h2>
+      <p class="foll">Proses 10-30 menit, Garansi Refil 1x24 Jam, Harga Rp 180000</p>
+      <button onclick="addToCart('10000 Followers', 180000)">Tambah ke Keranjang</button>
+    </section>
+    <section class="product">
+      <img src="img/100 L.jpg" alt="Game 1" class="pict11">
+      <h2 class="foll">100 Likes</h2>
+      <p class="foll">Proses 10-30 menit, Garansi Refil 1x24 Jam, Harga Rp 2500</p>
+      <button onclick="addToCart('100 Likes', 2500)">Tambah ke Keranjang</button>
+    </section>
+    <section class="product">
+      <img src="img/200 L.jpg" alt="Game 1" class="pict11">
+      <h2 class="foll">200 Likes</h2>
+      <p class="foll">Proses 10-30 menit, Garansi Refil 1x24 Jam, Harga Rp 4000</p>
+      <button onclick="addToCart('200 Likes', 4000)">Tambah ke Keranjang</button>
+    </section>
+    <section class="product">
+      <img src="img/500 L.jpg" alt="Game 1" class="pict11">
+      <h2 class="foll">500 Likes</h2>
+      <p class="foll">Proses 10-30 menit, Garansi Refil 1x24 Jam, Harga Rp 8000</p>
+      <button onclick="addToCart('500 Likes', 8000)">Tambah ke Keranjang</button>
+    </section>
+    <section class="product">
+      <img src="img/1000 L.jpg" alt="Game 1" class="pict11">
+      <h2 class="foll">1000 Likes</h2>
+      <p class="foll">Proses 10-30 menit, Garansi Refil 1x24 Jam, Harga Rp 12000</p>
+      <button onclick="addToCart('1000 Likes', 12000)">Tambah ke Keranjang</button>
+    </section>
+    <section class="product">
+      <img src="img/2000 L.jpg" alt="Game 1" class="pict11">
+      <h2 class="foll">2000 Likes</h2>
+      <p class="foll">Proses 10-30 menit, Garansi Refil 1x24 Jam, Harga Rp 20000</p>
+      <button onclick="addToCart('2000 Likes', 20000)">Tambah ke Keranjang</button>
+    </section>
+
+    <!-- Tambahkan sebanyak mungkin section untuk produk lainnya -->
+
+
+  </main>
+  <p class="linkig0">Tentang  :</p>
+  <p class="linkig0">Instagram kami 🔽:</p>
+  <a href="https://www.instagram.com/instaupwan.id?igsh=MzRlODBiNWFlZA==" target="_blank" class="linkig">Instagram</a>
+
+  <p class="linkig0">Hubungi Kami Via WhatsApp 📞:</p>
+  <a href="https://wa.me/62895322692273" target="_blank" class="linkig">WhatsApp</a>
+
+  <p class="linkig0">Email✉️:</p>
+  <p class="linkig0">Ikhwannurfaqih007@gmail.com</p>
+  <p class="link01">.</p>
+  <footer>
+    <p>&copy; 2024 Insta Up Followers Wan.id</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
